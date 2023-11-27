@@ -17,7 +17,8 @@
     />
     <title>Document</title>
   </head>
-  <body>
+  <body class="">
+    <!--nav bar-->
     <div class="">
       <nav class="flex items-center justify-between p-4 bg-gray-100">
         <div class="flex space-x-10 text-base font-semibold align-middle">
@@ -29,12 +30,23 @@
               alt=""
             />
           </a>
-          <h1 class="underline">Hsr Layout</h1>
+          <a href="">
+            <h1
+              class="underline"
+              style="color: initial"
+              onmouseover="this.style.color='#3490dc'"
+              onmouseout="this.style.color='initial'"
+            >
+              Hsr Layout
+            </h1>
+          </a>
         </div>
-        <div class="flex justify-between">
-          <ul class="flex space-x-20">
-            <li class="hover:bg-sky-700">
-              <i class="fas fa-magnifying-glass"></i> <a href="#">Search</a>
+        <!--navbar right-->
+        <div class="">
+          <ul class="flex space-x-20 flex justify-center">
+            <li class="">
+              <i class="fas fa-search hover:text-orange-700"></i>
+              <a href="#">Search</a>
             </li>
             <li class="hover:bg-sky-700">
               <i class="fas fa-cart-shopping"></i><a href="#">Cart</a>
@@ -50,10 +62,12 @@
         </div>
       </nav>
     </div>
-    <section>
-      <h1 class="text-2xl font-bold ml-32 mt-6">Best offers for you</h1>
 
-      <div class="flex justify-between p-20 space-x-4">
+    <!--sector-->
+    <section class="p-16">
+      <h1 class="text-2xl py-8 font-bold">Best offers for you</h1>
+
+      <div class="flex justify-between space-x-4">
         <a
           href="https://www.swiggy.com/restaurants/kfc-hsr-layout-bangalore-17310"
         >
@@ -155,7 +169,10 @@
             <h1 class="font-semibold">
               The Nosh House<br />
               4.4 • 35 mins<br />
-              Continental, Indian, Desserts, Italian, American, Mediterranean.
+              <span class="font-normal text-base"
+                >Continental, Indian, Desserts, Italian, American,
+                Mediterranean.</span
+              >
             </h1>
           </div>
           <div class="grid grid-rows-4 p-8">
@@ -167,7 +184,9 @@
             <h1 class="font-semibold">
               Lo! - Low Carb and Keto Foods<br />
               4.3 • 23 mins<br />
-              Healthy Food, Keto, North Indian, Continental HSR Layout
+              <span class="font-normal text-base"
+                >Healthy Food, Keto, North Indian, Continental HSR Layout</span
+              >
             </h1>
           </div>
           <div class="grid grid-rows-4 p-8">
@@ -178,8 +197,10 @@
             />
             <h1 class="font-semibold">
               Namaste<br />
-              4.1 • 21 mins <br />South Indian, Thalis, Biryani, Desserts,
-              Beverages, Indian Hsr Layout
+              4.1 • 21 mins <br /><span class="font-normal text-base"
+                >South Indian, Thalis, Biryani, Desserts, Beverages, Indian Hsr
+                Layout</span
+              >
             </h1>
           </div>
           <div class="grid grid-rows-4 p-8">
@@ -190,15 +211,16 @@
             />
             <h1 class="font-semibold">
               Bakingo<br />
-              4.2 • 24 mins <br />Bakery, Desserts, Beverages, Snacks
-              Koramangala
+              4.2 • 24 mins <br /><span class="font-normal text-base"
+                >Bakery, Desserts, Beverages, Snacks Koramangala</span
+              >
             </h1>
           </div>
         </div>
       </div>
     </section>
-    <footer class="bg-black">
-      <div class="flex p-32 font-bold text-2xl bg-gray-200 w-100 h-60">
+    <footer class="bg-black w-20">
+      <!-- <div class="flex p-32 font-bold text-2xl bg-gray-200 w-100 h-60">
         <h1>For better experience,download the Swiggy app now</h1>
         <div class="flex space-x-4">
           <a
@@ -219,7 +241,7 @@
             />
           </a>
         </div>
-      </div>
+      </div> -->
     </footer>
   </body>
 </html>
