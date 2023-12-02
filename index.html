@@ -20,7 +20,7 @@
   <body class="">
     <!--nav bar-->
     <div class="">
-      <nav class="flex items-center justify-between p-4 bg-gray-100">
+      <nav class="flex items-center justify-between p-8 bg-gray-100">
         <div class="flex space-x-10 text-base font-semibold align-middle">
           <a href="https://www.swiggy.com/">
             <img
@@ -45,20 +45,27 @@
         <div class="">
           <ul class="flex space-x-20 flex justify-center sm:justify-center pr-16">
             <li class="hover:bg-sky-700 transition duration-150 transform hover:scale-105">
-              <i class="fas fa-search hover:text-orange-700"></i>
-              <a href="https://www.swiggy.com/search">Search</a>
+                <i class="fas fa-search text-base hover:text-orange-700"></i>
+                <a href="https://www.swiggy.com/search" class="text-base">Search</a>
             </li>
             <li class="hover:bg-sky-700 transition duration-150 transform hover:scale-105">
-              <i class="fas fa-cart-shopping"></i><a href="https://www.swiggy.com/checkout">Cart</a>
+                <i class="fa-solid fa-tag text-base"></i>
+                <a href="https://www.swiggy.com/search" class="text-base">Offers</a>
             </li>
             <li class="hover:bg-sky-700 transition duration-150 transform hover:scale-105">
-              <i class="fas fa-phone"></i><a href="https://www.swiggy.com/support">Help</a>
+                <i class="fas fa-cart-shopping text-base"></i>
+                <a href="https://www.swiggy.com/checkout" class="text-base">Cart</a>
             </li>
             <li class="hover:bg-sky-700 transition duration-150 transform hover:scale-105">
-              <i class="fa-solid fa-user"></i>
-              <a href="https://www.swiggy.com/">Sign in</a>
+                <i class="fas fa-phone text-base"></i>
+                <a href="https://www.swiggy.com/support" class="text-base">Help</a>
             </li>
-          </ul>
+            <li class="hover:bg-sky-700 transition duration-150 transform hover:scale-105">
+                <i class="fa-solid fa-circle-user text-base"></i>
+                <a href="https://www.swiggy.com/" class="text-base">Sign in</a>
+            </li>
+        </ul>
+        
         </div>
       </nav>
     </div>
@@ -304,18 +311,20 @@
     </section>
          <!--Footer-->
          <footer class="bg-gray-800 text-white p-12 text-center">
-          <div class="container mx-auto flex justify-center items-center space-x-12">
+          <div class="container mx-auto flex space-x-24 justify-center items-center space-x-12">
             <!-- Swiggy logo and name div -->
-            <div class="flex gap-2 items-center">
-              <img src="/Images/pngwing.com.png" class="h-8" alt="">
+            <div class="flex gap-2 items-center mb-36 p-4 text-left">
               <div class="flex flex-col">
+                <div class="flex space-x-3" >
+                <img src="/Images/pngwing.com.png" class="h-8 w-6" alt="swiggy ima">
                 <h1 class="font-bold text-2xl">Swiggy</h1>
+              </div>
                 <p class="font-light">© 2023 Bundl Technologies Pvt. Ltd</p>
               </div>
             </div>
         
             <!-- Company links div -->
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 text-left">
               <span class="font-bold text-xl">Company</span>
               <span class="font-light text-base">About</span>
               <span class="font-light text-base">Careers</span>
@@ -326,23 +335,22 @@
             </div>
         
             <!-- Contact us links div -->
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col text-left gap-2 ">
               <span class="font-bold text-xl">Contact us</span>
               <span class="font-light text-base">Help & Support</span>
               <span class="font-light text-base">Partner with us</span>
               <span class="font-light text-base">Ride with us</span>
         
             <!-- Legal links div -->
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col text-left gap-2 ">
               <span class="font-bold text-xl">Legal</span>
               <span class="font-light text-base">Terms & Conditions</span>
               <span class="font-light text-base">Cookie Policy</span>
-              <span class="font-light text-base">Privacy Policy</span>
             </div>
             </div>
         
             <!-- Delivery locations div (new) -->
-            <div class="ml-auto flex flex-col gap-2">
+            <div class="ml-auto flex text-left flex-col gap-2">
               <span class="font-bold text-xl">We deliver to:</span>
               <span>Bangalore</span>
               <span>Gurgaon</span>
@@ -350,7 +358,9 @@
               <span>Delhi</span>
               <span>Mumbai</span>
               <span>Pune</span>
+              
             </div>
+            
           </div>
           <!-- Add additional footer content or links here -->
         </footer>
